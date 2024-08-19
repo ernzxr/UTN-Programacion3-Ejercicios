@@ -38,7 +38,6 @@
             // btnExerciseOne
             // 
             this.btnExerciseOne.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnExerciseOne.Enabled = false;
             this.btnExerciseOne.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExerciseOne.Location = new System.Drawing.Point(89, 75);
             this.btnExerciseOne.Name = "btnExerciseOne";
@@ -46,11 +45,11 @@
             this.btnExerciseOne.TabIndex = 0;
             this.btnExerciseOne.Text = "EJERCICIO 1";
             this.btnExerciseOne.UseVisualStyleBackColor = true;
+            this.btnExerciseOne.Click += new System.EventHandler(this.btnExerciseOne_Click);
             // 
             // btnExerciseTwo
             // 
             this.btnExerciseTwo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnExerciseTwo.Enabled = false;
             this.btnExerciseTwo.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExerciseTwo.Location = new System.Drawing.Point(203, 75);
             this.btnExerciseTwo.Name = "btnExerciseTwo";
@@ -58,6 +57,7 @@
             this.btnExerciseTwo.TabIndex = 1;
             this.btnExerciseTwo.Text = "EJERCICIO 2";
             this.btnExerciseTwo.UseVisualStyleBackColor = true;
+            this.btnExerciseTwo.Click += new System.EventHandler(this.btnExerciseTwo_Click);
             // 
             // btnExerciseThree
             // 

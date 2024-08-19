@@ -22,5 +22,17 @@ namespace TP1
             ExerciseFormThree form = new ExerciseFormThree();
             form.Show();
         }
+
+        private void btnExerciseTwo_Click(object sender, EventArgs e)
+        {
+            ExerciseFormTwo form = new ExerciseFormTwo();
+            form.Show();
+        }
+
+        private void btnExerciseOne_Click(object sender, EventArgs e)
+        {
+            ExerciseFormOne form = new ExerciseFormOne();
+            form.Show();
+        }
     }
 }
