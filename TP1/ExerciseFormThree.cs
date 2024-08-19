@@ -16,5 +16,32 @@ namespace TP1
         {
             InitializeComponent();
         }
+
+        private void btnShow_Click(object sender, EventArgs e)
+        {
+            lblPreview.Text = "";
+            lblPreview.Text += "Usted seleccionó los siguientes elementos:";
+
+            lblPreview.Text += rbtnMale.Checked
+                ? "\nSexo: " + rbtnMale.Text
+                : rbtnFemale.Checked
+                ? "\nSexo: " + rbtnFemale.Text
+                : "\nSexo: " + rbtnOther.Text;
+
+            lblPreview.Text += rbtnMarried.Checked
+                ? "\nEstado Civil: " + rbtnMarried.Text
+                : "\nEstado civil: " + rbtnSingle.Text;
+
+            lblPreview.Text += "\nOficio:";
+            foreach (string job in clbOccupation.CheckedItems)
+            {
+                lblPreview.Text += "\n  - " + job;
+            }
+        }
+
+        private void clbOccupation_SelectedValueChanged(object sender, EventArgs e)
+        {
+            btnShow.Enabled = clbOccupation.CheckedItems.Count > 0;
+        }
     }
 }
