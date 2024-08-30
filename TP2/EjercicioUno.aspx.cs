@@ -18,9 +18,11 @@ namespace TP2
         bool ValidateData(ref int productOneUnits, ref int productTwoUnits)
         {
             if (string.IsNullOrWhiteSpace(txtProductOneName.Text) ||
-                !int.TryParse(txtProductOneUnits.Text, out productOneUnits) ||
                 string.IsNullOrWhiteSpace(txtProductTwoName.Text) ||
-                !int.TryParse(txtProductTwoUnits.Text, out productTwoUnits))
+                !int.TryParse(txtProductTwoUnits.Text, out productTwoUnits) ||
+                !int.TryParse(txtProductOneUnits.Text, out productOneUnits) ||
+                productOneUnits < 1 ||
+                productTwoUnits < 1)
             {
                 return false;
             }
